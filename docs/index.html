@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- 제이쿼리 불러오기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 테일윈드 불러오기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+
+  <!-- 스와이퍼 불러오기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+
+  <!-- Noto Sans KR 폰트 불러오기 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Ubuntu 폰트 불러오기 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Sarabun 폰트 불러오기 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- 공통 css, js 불러오기 -->
+  <script src="common.js" defer></script>
+  <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+
+  <div class="site-wrap">
+    <div class="top-bar-group">
+      <header class="top-bar-1">
+        <div class="con h-full">
+          <nav class="h-full">
+            <ul class="h-full flex justify-end">
+              <li><a href="#" class="flex h-full items-center">LOGIN</a></li>
+              <li><a href="#" class="flex h-full items-center">JOIN</a></li>
+              <li><a href="#" class="flex h-full items-center">고객센터</a></li>
+              <li><a href="#" class="search flex h-full items-center">
+                  <span>SEARCH</span>
+                  <span class="search-icon">
+                    <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px" viewBox="0 0 11 11"
+                      style="enable-background:new 0 0 11 11;" xml:space="preserve">
+                      <style type="text/css">
+                        .st0 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #FFFFFF;
+                          width: 12px;
+                        }
+                      </style>
+                      <path class="st0"
+                        d="M6.6,7.2C6,7.7,5.2,7.9,4.4,7.9c-2.1,0-3.8-1.7-3.8-3.8s1.7-3.8,3.8-3.8S8.2,2,8.2,4.1c0,0.9-0.3,1.7-0.8,2.3
+                                         l3.3,3.2l-0.8,0.8L6.6,7.2z M6.9,4.1c0,1.4-1.1,2.5-2.5,2.5S1.9,5.5,1.9,4.1c0-1.4,1.1-2.5,2.5-2.5S6.9,2.7,6.9,4.1z" />
+                    </svg>
+                  </span>
+                </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <header class="top-bar-2">
+        <div class="con h-full">
+          <nav class="h-full flex">
+            <div class="menu-bg"></div>
+            <ul class="flex h-full flex-1 menu-2">
+              <li class="menu">
+                <a href="#">MENU</a>
+                <ul>
+                  <li><a href="#">신제품/인기제품</a></li>
+                  <li><a href="#">이달의 메뉴</a></li>
+                  <li><a href="#">도넛</a></li>
+                  <li><a href="#">커피/음료</a></li>
+                  <li><a href="#">아이스크림/프로즌</a></li>
+                  <li><a href="#">브랜딩 제품소개</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">STORE</a>
+                <ul>
+                  <li><a href="#">매장찾기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">HOME SERVICE</a>
+                <ul>
+                  <li><a href="#">홈서비스</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a href="#" class="flex items-center logo"><img class="img-box" src="resource/01_logo.png" alt=""></a>
+            <ul class="flex h-full flex-1 justify-end">
+              <li>
+                <a href="#">EVENT</a>
+                <ul>
+                  <li><a href="#">진행 이벤트</a></li>
+                  <li><a href="#">종료 이벤트</a></li>
+                  <li><a href="#">당첨자 발표</a></li>
+                  <li><a href="#">제휴 서비스</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">BRAND</a>
+                <ul>
+                  <li><a href="#">도넛극장</a></li>
+                  <li><a href="#">브랜드스토리</a></li>
+                  <li><a href="#">브랜드영상</a></li>
+                  <li><a href="#">상품권 구입안내</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+              <li class="survey">
+                <a href="#">SURVEY</a>
+                <ul>
+                  <li><a href="#">설문조사</a></li>
+                  <li><a href="#">설문조사 운영점</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <section class="main-bn">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide-1">
+            <div class="bg-top">
+              <img class="img-box" src="resource/02_1_main-bn-bg.png" alt="">
+            </div>
+            <div class="bg-bottom"></div>
+            <div class="bn-content con2">
+              <div class="text">
+                <div class="text1">상큼함과 달콤함의 만남</div>
+                <div class="text-line"></div>
+                <div class="text2">LIME GLAZED</div>
+                <div class="text3">라임 글레이즈드 도넛</div>
+                <div class="text4">크리스피 크림 도넛과 달콤한 추억을 남겨보세요.</div>
+              </div>
+              <div class="img">
+                <img src="resource/02_2_main-bn.png" alt="" class="img-box">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide-2">Slide 2</div>
+          <div class="swiper-slide slide-3">Slide 3</div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="slider-btn">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-menu section-css">
+      <div class="con">
+        <img src="resource/03_best-menu.png" alt="" class="img-box">
+      </div>
+    </section>
+
+    <section class="drink section-css">
+      <div class="con">
+        <img src="resource/04_drink.png" alt="" class="img-box">
+      </div>
+    </section>
+
+    <section class="sub-bn section-css">
+      <div class="con">
+        <img src="resource/05_sub-bn.png" alt="" class="img-box">
+      </div>
+    </section>
+
+    <section class="event section-css">
+      <div class="con">
+        <img src="resource/06_event.png" alt="" class="img-box">
+      </div>
+    </section>
+
+    <section class="brand-story section-css">
+      <div class="con">
+        <img src="resource/07_brand-story.png" alt="" class="img-box">
+      </div>
+    </section>
+
+    <section class="sns section-css">
+      <div class="con">
+        <img src="resource/08_sns.png" alt="" class="img-box">
+      </div>
+      <img src="resource/09_footer_line.png" alt="" class="img-box">
+    </section>
+
+    <section class="footer">
+      <div class="con">
+        <img src="resource/10_footer.png" alt="" class="img-box">
+      </div>
+    </section>
+  </div>
+
+</body>
+
+</html>

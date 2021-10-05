@@ -1,0 +1,285 @@
+.con {
+  width:1280px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.con2 {
+  width:1420px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.img-box {
+  width:100%;
+  display:block;
+}
+
+body {
+  line-height:1;
+  font-family: 'Sarabun', 'Noto Sans KR', sans-serif;
+}
+
+/* 탑바 시작 */
+.top-bar-group {
+  font-family: 'Ubuntu', 'Noto Sans KR', sans-serif;
+}
+
+/* 탑바 1 */
+.top-bar-1 {
+  height:50px;
+  color:#131313;
+  font-size:12px;
+  font-weight:500;
+  background-color:#FAFAFA;
+}
+
+.top-bar-1 > .con > nav > ul > li > a:not(.search) {
+  padding:0 15px;
+  margin-left:15px;
+}
+
+.top-bar-1 > .con > nav > ul > li:hover > a {
+  color:#8BAB33;
+}
+
+.top-bar-1 > .con > nav > ul > li:hover > a > .search-icon {
+  background-color:#8BAB33;
+}
+
+.top-bar-1 > .con > nav > ul > li > .search {
+  padding-left:15px;
+}
+
+.top-bar-1 > .con > nav > ul > li > .search > .search-icon {
+  margin-left:10px;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background-color:#131313;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* 탑바 2 */
+.top-bar-2 {
+  font-family: 'Sarabun', sans-serif;
+  height:90px;
+}
+
+.top-bar-2 >.con > nav > .menu-bg {
+  content:"";
+  position:absolute;
+  top:140px;
+  left:0;
+  width:100%;
+  height:0px;
+  background-color:white;
+  transition:height 0.3s;
+  z-index:20;
+}
+
+.top-bar-2 >.con > nav > .menu-bg.hover {
+  height:275px;
+  transition:height 0.3s;
+  border-top:1px solid #BABABA;
+}
+
+.top-bar-2 >.con > nav > .logo {
+  width:172px;
+}
+
+.top-bar-2 >.con > nav > ul > li {
+  position:relative;
+}
+
+.top-bar-2 >.con > nav > ul > li:not(.survey) {
+  margin-right:40px;
+}
+
+.top-bar-2 >.con > nav > ul > .menu {
+  margin-left:-20px;
+}
+
+.top-bar-2 >.con > nav > ul > .survey {
+  margin-right:-20px;
+}
+
+.top-bar-2 >.con > nav > ul > li > a {
+  display:flex;
+  height:100%;
+  align-items:center;
+  font-size:17px;
+  font-weight:700;
+  color:#131313;
+  letter-spacing:-0.3px;
+}
+
+.top-bar-2 >.con > nav > ul > li > a {
+  padding:20px;
+}
+
+.top-bar-2 >.con > nav > ul > li:hover > a {
+  color:#8BAB33;
+}
+
+.top-bar-2 >.con > nav > ul > li > ul {
+  margin-top:20px;
+  position:absolute;
+  top:100%;
+  left:50%;
+  transform:translatex(-50%);
+  z-index:21;
+  min-width:100%;
+  display:none;
+}
+
+.top-bar-2 >.con > nav > ul > li > ul.hover {
+  display:block;
+}
+
+.top-bar-2 >.con > nav > ul > li > ul > li {
+  text-align:center;
+}
+
+.top-bar-2 >.con > nav > ul > li > ul > li > a {
+  white-space:nowrap;
+  font-size:13px;
+  font-weight:500;
+  color:#484848;
+  display:block;
+  padding:10px;
+}
+
+.top-bar-2 >.con > nav > ul > li > ul > li:hover > a {
+  background-color:#8BAB33;
+  color:white;
+}
+/* 탑바 끝 */
+
+/* 메인 배너 시작 */
+.main-bn {
+  margin-bottom:200px;
+}
+
+.main-bn .swiper {
+  width:100%;
+  height:700px;
+  overflow:hidden;
+  position:relative;
+}
+
+.main-bn .slide-1 {
+  width:100%;
+  background-color:#E7EDD6;
+  position:relative;
+  line-height:1;
+}
+
+.main-bn .slide-1 > .bg-top {
+  width:100%;
+  height:calc(700px - 238px);
+  background-color:#E7EDD6;
+}
+
+.main-bn .slide-1 > .bg-top > .img-box {
+  opacity:10%;
+  height:100%;
+}
+
+.main-bn .slide-1 > .bg-bottom {
+  width:100%;
+  height:238px;
+  background-color:#F4F6EA;
+}
+
+.main-bn .slide-1 > .bn-content {
+  height:700px;
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.main-bn .slide-1 > .bn-content > .text {
+  position:absolute;
+  top:140px;
+}
+
+.main-bn .slide-1 > .bn-content > .text > .text1 {
+  font-size:24px;
+  color:#8BAB33;
+  margin-bottom:13px;
+}
+
+.main-bn .slide-1 > .bn-content > .text > .text-line {
+  width:60px;
+  height:2px;
+  background-color:white;
+}
+
+.main-bn .slide-1 > .bn-content > .text > .text2 {
+  font-size:85px;
+  font-weight:bold;
+  color:#8BAB33;
+  margin-bottom:15px;
+}
+
+.main-bn .slide-1 > .bn-content > .text > .text3 {
+  font-size:37px;
+  font-weight:bold;
+  color:#8BAB33;
+  margin-bottom:15px;
+}
+
+.main-bn .slide-1 > .bn-content > .text > .text4 {
+  font-size:20px;
+  font-weight:500;
+  color:#596B28;
+}
+
+.main-bn .slide-1 > .bn-content > .img {
+  max-width:1004.98px;
+  position:absolute;
+  top:-20px;
+  right:-70px;
+}
+
+/* 버튼 커스텀 */
+.main-bn .slider-btn .swiper-button-next,
+.main-bn .slider-btn .swiper-button-prev {
+  top:auto;
+  bottom:120px;
+  left:310px;
+  right:auto;
+  width:70px;
+  height:70px;
+  border-radius:3px;
+  background-color:#CEE68D;
+}
+
+.main-bn .slider-btn .swiper-button-next {
+  left:400px;
+}
+
+.main-bn .slider-btn .swiper-button-next::after,
+.main-bn .slider-btn .swiper-button-prev::after {
+  font-size:30px;
+  font-weight:bold;
+  color:white;
+}
+
+.main-bn .slider-btn .swiper-button-next:hover,
+.main-bn .slider-btn .swiper-button-prev:hover {
+  background-color:#C8F05A;
+}
+/* 메인 배너 끝 */
+
+.section-css {
+  margin-bottom: 100px;
+}
+
+.footer {
+  margin-bottom: 50px;
+}
