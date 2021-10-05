@@ -23,6 +23,11 @@ body {
 /* 탑바 시작 */
 .top-bar-group {
   font-family: 'Ubuntu', 'Noto Sans KR', sans-serif;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 100;
 }
 
 /* 탑바 1 */
@@ -66,6 +71,7 @@ body {
 .top-bar-2 {
   font-family: 'Sarabun', sans-serif;
   height:90px;
+  background-color: white;
 }
 
 .top-bar-2 >.con > nav > .menu-bg {
@@ -160,6 +166,7 @@ body {
 
 /* 메인 배너 시작 */
 .main-bn {
+  margin-top: 140px;
   margin-bottom:200px;
 }
 
